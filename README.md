@@ -1,33 +1,47 @@
-# Weathervane 🌤️
+# 🌦️ Weathervane
 
-A multi-tab weather web app with real photographic scenes that shift with the time of day — read the sky before you head out.
+A weather web app that goes beyond a simple forecast — the background changes to a real photographic scene matching the actual sunrise/sunset phase of the day at your location, so the app *looks* like the moment you're in.
 
-**Live demo:** [mellifluous-faloodeh-71e879.netlify.app](https://mellifluous-faloodeh-71e879.netlify.app)
+**Live demo:** [Add your Netlify URL here]
 
-## Features
+---
 
-- **5 tabs** — Today, Sea, Air, Land, and Activities, each pulling different data for the searched location
-- **Phase-based scenery** — every tab has 4 real photographs (day / dusk / dawn / night) that swap automatically based on the actual sunrise/sunset time at the searched city
-- **City search with autocomplete** — debounced search with keyboard navigation
-- **Unit toggles** — °C/°F, km/h/mph, m/ft, applied instantly from cached data (no extra API calls)
-- **Activities rating** — rates hiking, cycling, camping, fishing and more against the next 24h of weather
-- **Beaufort scale** — wind force description on the Sea tab, for a sailing-relevant read on wind speed
-- **Lazy loading** — each tab only fetches data when opened, and caches it for instant unit conversion
+## ✨ Features
 
-## Data sources
+- **Multi-tab interface** for browsing current conditions, forecast, and details
+- **Phase-based backgrounds** — photographic imagery tied to real sunrise/sunset times (dawn, day, dusk, night) rather than generic icons
+- **Beaufort wind scale integration** — wind speed shown in a scale sailors and meteorologists actually use, not just raw km/h
+- **Optimized images** — backgrounds converted to WebP and embedded as base64 to keep load times fast without external image requests
 
-- [Open-Meteo](https://open-meteo.com/) — forecast, marine, and air quality APIs
-- [USGS](https://earthquake.usgs.gov/) — recent earthquake and seismic risk data
-- Moon phase and tide estimate calculated locally (no API)
+## 🛠️ Built With
 
-## Tech stack
+- HTML / CSS / JavaScript
+- Weather data API
+- Netlify (hosting/deployment)
 
-Vanilla HTML, CSS, and JavaScript — no frameworks, no build step. Deployed on Netlify.
+## 🚀 Run Locally
 
-## Project history
+Open `index.html` directly in any browser — no build step, no dependencies.
 
-This app started as a Python terminal script, evolved into a Tkinter desktop GUI, and was finally rebuilt as this web app. The earlier Python versions are included in this repo for reference.
+## 📦 Deploy
 
-## Screenshots
+1. Go to [netlify.com](https://netlify.com)
+2. Drag & drop the project folder (or connect the GitHub repo for auto-deploy)
+3. Get a public link instantly
 
-*(add a couple of screenshots here later — Today tab at day and Sea tab at night look great side by side)*
+## 📁 Project Structure
+
+```
+Weathervane_ultimate/
+├── index.html          # Main web app
+├── archive/             # Earlier Python prototype iterations (dev history)
+└── README.md
+```
+
+## 🗺️ Development Notes
+
+This project evolved from early Python prototypes (see `/archive`) into a polished single-file web app. Along the way it involved resolving Git merge conflicts and iterating on image-loading performance.
+
+## 👤 Author
+
+**nemanja-byte88** — [GitHub](https://github.com/nemanja-byte88)\
